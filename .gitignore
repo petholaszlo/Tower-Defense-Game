@@ -1,0 +1,14 @@
+# Compiled files from terminal
+*.class
+
+# File used to compile and run automatically from terminal (MacOS)
+run.sh
+
+# Store
+.DS_Store
+
+# IDE local settings
+.vscode
+
+# For testing CI locally
+Dockerfile

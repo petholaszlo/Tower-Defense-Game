@@ -1,0 +1,24 @@
+image: openjdk:11
+
+stages:
+  - build
+  - test
+
+# Build
+build:
+  stage: build
+  script:
+    - javac Game.java
+
+# Testing
+test:
+  stage: test
+  script:
+    - javac -cp .:junit_raw/junit.jar logic/EnemyTest.java
+    - java -cp .:junit_raw/junit.jar org.junit.runner.JUnitCore logic.EnemyTest
+    - javac -cp .:junit_raw/junit.jar logic/LevelTest.java
+    - java -cp .:junit_raw/junit.jar org.junit.runner.JUnitCore logic.LevelTest
+    - javac -cp .:junit_raw/junit.jar logic/PointTest.java
+    - java -cp .:junit_raw/junit.jar org.junit.runner.JUnitCore logic.PointTest
+    - javac -cp .:junit_raw/junit.jar logic/TowerTest.java
+    - java -cp .:junit_raw/junit.jar org.junit.runner.JUnitCore logic.TowerTest
