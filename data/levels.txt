@@ -1,0 +1,5 @@
+Level 1 - The beginning,level_1,Easy,3
+Level 2 - The middle,level_2,Medium,3
+Level 3 - The middle,level_3,Medium,3
+Level 4 - The middle,level_4,Medium,3
+Level 5 - The end,level_5,Hard,3
